@@ -23,7 +23,4 @@ public class Tablet extends DispositivoTecnologico {
 	public void setAccesorios(String accesorios) {
 		this.accesorios = accesorios;
 	}
-	public String getTipo() {
-		return "tablet";
-	}
 }

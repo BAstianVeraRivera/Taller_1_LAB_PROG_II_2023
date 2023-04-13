@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Cliente {
 	private String nombre;
 	private String apellido;
@@ -12,6 +14,10 @@ public class Cliente {
 		this.nroContacto = nroContacto;
 		this.estadoCivil = estadoCivil;
 		this.ciudad = ciudad;
+	}
+	public ArrayList<CuentaCliente> cuentas = new ArrayList<CuentaCliente>();
+	public void agregarCuenta(CuentaCliente cuenta) {
+		this.cuentas.add(cuenta);
 	}
 
 	private String ciudad;

@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Computador extends DispositivoTecnologico {
 	private String tajetaVideo;
 	private String fuentePoder;
@@ -9,6 +11,9 @@ public class Computador extends DispositivoTecnologico {
 		this.tajetaVideo = tajetaVideo;
 		this.fuentePoder = fuentePoder;
 		this.chasis = chasis;
+	}
+	public ArrayList<Pantalla> pantallas = new ArrayList<Pantalla>();
+	public void agregarPantalla(Pantalla pantalla) {this.pantallas.add(pantalla);
 	}
 
 	public String getTajetaVideo() {
@@ -35,7 +40,4 @@ public class Computador extends DispositivoTecnologico {
 		this.chasis = chasis;
 	}
 
-	public String getTipo() {
-		return "computador";
-	}
 }

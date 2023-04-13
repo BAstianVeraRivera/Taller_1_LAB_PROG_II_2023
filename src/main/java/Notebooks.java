@@ -34,7 +34,4 @@ public class Notebooks extends DispositivoTecnologico {
 		this.bateria = bateria;
 	}
 
-	public String getTipo() {
-		return "notebook";
-	}
 }
